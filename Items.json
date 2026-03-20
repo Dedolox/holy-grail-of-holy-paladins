@@ -1749,6 +1749,19 @@
         }
     ],
     "shield": [
+	{
+            "name": "Book of Highborn",
+            "bh": 70,
+            "crit": 0,
+            "haste": 22,
+            "mp5": 9,
+            "int": 20,
+            "socket": 0,
+            "meta": 0,
+            "content": "SWP",
+            "dungeon": "SWP",
+            "boss": "Twins"
+        },
         {
             "name": "Felstone Bulwark",
             "bh": 64,
