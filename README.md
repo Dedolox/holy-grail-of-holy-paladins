@@ -4,7 +4,7 @@ my program and not only people who are familiar with coding or python.
 So if you want to try my program but think that I am a genius russian hacker that puts more than 100 hours of work into an item optimizer for a game that was released 20 years ago just to put some virus on your computer this 
 is how you can try it without using the exe:
 
-1) You can just install "Anaconda" because then you can use "Jupyter Notebook". You just download the file with the .ipynb ending (jupyter filde) and put it into a new jupyter file. Now you just do SHIFT + ENTER and the program starts.
+1) You can just install "Anaconda" because then you can use "Jupyter Notebook". You just download the file with the .ipynb ending (jupyter file) and put it into a new jupyter file. Now you just do SHIFT + ENTER and the program starts.
    Of course you still need to download the "Item.json" and "Holy_Document.pdf" and "Holy_User_Guide.pdf" for it to function properly.
 
 2) You can make the exe yourself. For this you have to download python. Then you have to install pyinstaller via the command pip install pyinstaller. Then you go into "Command Prompt" or "PowerShell" and go with
