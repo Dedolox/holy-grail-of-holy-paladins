@@ -1,4 +1,7 @@
-Ok so some people told me that they dont want to click a random exe from a random guy from the internet which I totally understand. The reason why I made such an exe is simple: I want that everyone who is interested in it can use
+First upload of my program here was 20.03.2026 but I am of course constantly working on it when I get good input for how to make it better. So I will reupload the newest version of my program and it overwrites the old one. I am
+just telling you this because some people told me it looks suspicious that the upload was just hours ago.
+
+Furthermore some people told me that they dont want to click a random exe from a random guy from the internet which I totally understand. The reason why I made such an exe is simple: I want that everyone who is interested in it can use
 my program and not only people who are familiar with coding or python.
 
 So if you want to try my program but think that I am a genius russian hacker that puts more than 100 hours of work into an item optimizer for a game that was released 20 years ago just to put some virus on your computer this 
