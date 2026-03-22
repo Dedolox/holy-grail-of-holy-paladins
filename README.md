@@ -1,5 +1,5 @@
 First upload of my program here was 20.03.2026 but I am of course constantly working on it when I get good input for how to make it better. So I will reupload the newest version of my program and it overwrites the old one. I am
-just telling you this because some people told me it looks suspicious that the upload was just hours ago.
+just telling you this because some people told me it looks suspicious that the upload was just hours ago. (Last update implemented "Mana Weight" instead of binary "Need Mana"
 
 Furthermore some people told me that they dont want to click a random exe from a random guy from the internet which I totally understand. The reason why I made such an exe is simple: I want that everyone who is interested in it can use
 my program and not only people who are familiar with coding or python.
