@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[26]:
+# In[1]:
 
 
 import os
@@ -31,6 +31,8 @@ def holy_light_hpms(bh, crit, haste, mana, mp5, int, min_h, max_h, spellh, spell
     cast_time = (spellh-0.5) / (1 + haste/1577)
     real_crit = crit + 0.06
     real_crit_int = real_crit + int * 0.000125 * 1.1**2
+    overheal_normal = float(overheal_normal_var.get())
+    overheal_crit = float(overheal_crit_var.get())
 
     if mana_mode == "capped":
         real_crit_int += 0.05
@@ -45,7 +47,7 @@ def holy_light_hpms(bh, crit, haste, mana, mp5, int, min_h, max_h, spellh, spell
         heal_nc = (min_h + max_h)/2 + (bh + int * 0.35 * 1.1**2) * (spellh/3.5) * spell_mult * 1.12
 
     heal_c = heal_nc * 1.5
-    heal_av = heal_nc * (1 - real_crit_int) + heal_c * real_crit_int
+    heal_av = heal_nc * (1 - real_crit_int) * (1 - overheal_normal) + heal_c * real_crit_int * (1 - overheal_crit)
 
     if libram_var.get() == "mending":
         mana_mp5 = (mp5 + 22) * cast_time / 5
@@ -589,6 +591,17 @@ crit_cap_entry = tk.Entry(
     state="disabled"   
 )
 crit_cap_entry.grid(row=1, column=3)
+
+#---- Overheal -------
+# Overheal Normal
+tk.Label(stats_frame, text="Overheal normal:").grid(row=2, column=2, padx=(30,5), sticky="w")
+overheal_normal_var = tk.StringVar(value="0.0")
+tk.Entry(stats_frame, textvariable=overheal_normal_var, width=10).grid(row=2, column=3)
+
+# Overheal Crits
+tk.Label(stats_frame, text="Overheal crits:").grid(row=3, column=2, padx=(30,5), sticky="w")
+overheal_crit_var = tk.StringVar(value="0.0")
+tk.Entry(stats_frame, textvariable=overheal_crit_var, width=10).grid(row=3, column=3)
 
 def update_crit_cap_state(*args):
     if mana_mode_var.get() == "capped":
